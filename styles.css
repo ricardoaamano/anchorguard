@@ -1,0 +1,539 @@
+/* Estilos básicos */
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-optical-sizing: auto; /* Opcional, puedes eliminarla si da problemas */
+    font-weight: 400; /* Reemplaza <weight> con un valor numérico válido como 400, 600, etc. */
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: rgb(9, 9, 43);
+    color: white;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo-img {
+    max-height: 80px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.nav-links {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ff8000;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Menu Icon (Hamburger) for small screens */
+.menu-icon {
+    margin-right: 20px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(9, 9, 43);
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff8000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    width: 160px;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#intro {
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+    text-align: left;
+}
+
+#intro h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#intro-servicios {
+    margin-left: 80px;
+    margin-right: 40px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro-servicios {
+    display: flex;
+    padding: 20px;
+    margin-left: 40px;
+    align-items: left;
+    justify-content: space-between; /* Distribuye los elementos en línea, dejando espacio entre ellos */
+    background-color: #f9f9f9;
+    border-radius: 8px; /* Bordes redondeados para una apariencia más suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+}
+
+#intro-servicios h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.intro-servicios h3 {
+    flex: 1; /* Ocupa el espacio disponible a la izquierda */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    color: rgb(9, 9, 43);
+}
+
+.intro-servicios p {
+    flex: 2; /* Ocupa el espacio central de manera proporcional */
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.intro-servicios a.btn {
+    flex: 0 0 auto; /* Mantiene el botón en su tamaño natural */
+    height: 30px;
+    width: 120px;
+    display: inline-block;
+    background-color: #ff8000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff8000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    font-size: 1rem;
+}
+
+html {
+    scroll-padding-top: 60px; /* Ajusta el valor según el espacio necesario */
+}
+
+#linkedin-cards {
+    margin: 60px;
+    padding: 20px; /* Espacio alrededor del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+#linkedin-cards h2 {
+    text-align: left; /* Centra el texto del encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    font-size: 24px; /* Tamaño del texto del encabezado */
+    font-weight: bold; /* Negrita para el encabezado */
+}
+
+.linkedin-card-container {
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en una nueva línea si no caben en una sola */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.linkedin-card {
+    flex: 1 1 300px; /* Permite que las tarjetas se ajusten de manera flexible */
+    max-width: 100%; /* Asegura que las tarjetas no excedan el contenedor */
+}
+
+.linkedin-card iframe {
+    width: 100%; /* Ancho del iframe ajustado al contenedor */
+    height: 400px; /* Ajusta la altura aquí según tus necesidades */
+    border: none; /* Elimina el borde del iframe */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+}
+
+#servicios, #contacto, #cultura {
+    padding: 80px 40px;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(9, 9, 43);
+}
+
+h3 {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(9, 9, 43);
+}
+
+.servicio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.servicio-image {
+    max-width: 35%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+.servicio-content {
+    max-width: 60%;
+}
+
+.servicio.derecha .servicio-content {
+    order: 1;
+}
+
+.servicio.derecha .servicio-image {
+    order: 2;
+}
+
+.servicio.izquierda .servicio-content {
+    order: 2;
+}
+
+.servicio.izquierda .servicio-image {
+    order: 1;
+}
+
+.nosotros {
+    font-family: 'Work Sans', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nosotros-image {
+    flex: 1;
+    padding-top: 30px;
+}
+
+.nosotros-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espacio entre tarjetas */
+    padding: 20px; /* Opcional: espacio interno para mejorar el aspecto */
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px; /* Necesario para el efecto de giro */
+    position: relative; /* Asegura que los elementos absolutos dentro estén bien posicionados */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+
+.card-front {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* Ajusta la transparencia de la imagen */
+    font-family: 'Work Sans', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    z-index: -1;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+.card-back {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(180deg); /* Gira el reverso para ocultarlo inicialmente */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra para un efecto de profundidad */
+    border-radius: 10px; /* Igual que en el frente, para consistencia */
+}
+
+.card-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center; /* Alinea el texto para una mejor presentación */
+}
+
+.card:hover .card-front {
+    transform: rotateY(180deg); /* Gira el frontal para mostrar el reverso al pasar el cursor */
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg); /* Muestra el reverso al pasar el cursor */
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    padding-bottom: 10px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: medium;
+    font-weight: 300;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links, .social-links {
+    font-size: small;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li, .social-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a, .social-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .social-links a:hover {
+    color: #ff8000;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-logo {
+    width: 96px; /* Ajusta el tamaño según tu preferencia */
+    height: auto;
+    margin-right: 5px; /* Espacio entre el logo y el texto */
+    vertical-align: middle; /* Alinea el logo con el texto */
+}
