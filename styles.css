@@ -120,14 +120,16 @@ body {
 
 .video-container {
     position: relative;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 
 #bg-video {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2); /* Ajusta el zoom con 'scale' */
     width: 100%;
     height: 100%;
     object-fit: cover;
