@@ -350,6 +350,10 @@ h3 {
     border-radius: 8px;
 }
 
+.servicio h3 {
+    text-align: center;
+}
+
 .servicio-image {
     max-width: 35%;
     height: auto;
@@ -377,22 +381,52 @@ h3 {
     order: 1;
 }
 
-.nosotros {
-    font-family: 'Work Sans', sans-serif;
-    font-size: medium;
-    font-weight: 400;
+.nosotros-container {
+    padding: 80px 40px;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.nosotros h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
+    color: rgb(9, 9, 43);
+}
+
+.nosotros h3 {
+    text-align: center;
+}
+
+.nosotros p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.nosotros a.nosotros h3 {
+    text-align: center;
+    color: #0066cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nosotros a.nosotros:hover h3 {
+    color: #004499;
 }
 
 .nosotros-image {
-    flex: 1;
-    padding-top: 30px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .nosotros-image img {
-    width: 100%;
+    width: 150px;
     height: auto;
-    max-width: 400px;
 }
 
 .card-container {
