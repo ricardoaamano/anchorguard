@@ -424,12 +424,11 @@ h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.9; /* Ajusta la transparencia de la imagen */
     font-family: 'Work Sans', sans-serif;
     font-size: small;
     font-weight: 400;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    padding: 10px;
+    padding: 2px;
     z-index: -1;
     text-align: center;
     color: white;
