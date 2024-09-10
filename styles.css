@@ -78,7 +78,6 @@ body {
     border-radius: 5px;
 }
 
-/* Menu Icon (Hamburger) for small screens */
 .menu-icon {
     margin-right: 20px;
     display: none;
@@ -129,7 +128,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.2); /* Ajusta el zoom con 'scale' */
+    transform: translate(-50%, -50%) scale(1.2);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -221,10 +220,10 @@ body {
     padding: 20px;
     margin-left: 40px;
     align-items: left;
-    justify-content: space-between; /* Distribuye los elementos en línea, dejando espacio entre ellos */
+    justify-content: space-between;
     background-color: #f9f9f9;
-    border-radius: 8px; /* Bordes redondeados para una apariencia más suave */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #intro-servicios h2 {
@@ -235,7 +234,7 @@ body {
 }
 
 .intro-servicios h3 {
-    flex: 1; /* Ocupa el espacio disponible a la izquierda */
+    flex: 1;
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -245,7 +244,7 @@ body {
 }
 
 .intro-servicios p {
-    flex: 2; /* Ocupa el espacio central de manera proporcional */
+    flex: 2;
     margin: 0;
     padding: 20px;
     text-align: left;
@@ -255,7 +254,7 @@ body {
 }
 
 .intro-servicios a.btn {
-    flex: 0 0 auto; /* Mantiene el botón en su tamaño natural */
+    flex: 0 0 auto;
     height: 30px;
     width: 120px;
     display: inline-block;
@@ -283,7 +282,7 @@ body {
 }
 
 html {
-    scroll-padding-top: 60px; /* Ajusta el valor según el espacio necesario */
+    scroll-padding-top: 60px;
 }
 
 #linkedin-cards {
