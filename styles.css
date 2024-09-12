@@ -1,8 +1,7 @@
-/* Estilos básicos */
 body {
     font-family: 'Work Sans', sans-serif;
-    font-optical-sizing: auto; /* Opcional, puedes eliminarla si da problemas */
-    font-weight: 400; /* Reemplaza <weight> con un valor numérico válido como 400, 600, etc. */
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -28,7 +27,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -46,9 +45,16 @@ body {
 }
 
 .logo-img {
-    max-height: 80px;
-    margin-right: 10px;
+    max-height: 10vh;
+    margin-right: 2vw;
     width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        max-height: 7vh;
+        margin-right: 1.5vw;
+    }
 }
 
 .nav-links {
@@ -147,7 +153,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
 }
 
 h1 {
@@ -183,13 +188,14 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 90%;
+    margin-left: 5vw;
 }
 
 #intro {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    max-width: 100%;
     background-color: white;
     text-align: left;
 }
@@ -198,39 +204,31 @@ body {
     font-family: 'Exo 2', sans-serif;
     font-weight: 600;
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 #intro p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
 }
 
 #intro-servicios {
-    margin-left: 80px;
-    margin-right: 40px;
-    width: 85%;
+    margin-left: 5vw;
+    margin-right: 5vw;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .intro-servicios {
     display: flex;
-    padding: 20px;
-    margin-left: 40px;
-    align-items: left;
-    justify-content: space-between;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2rem;
+    padding: 2rem;
     background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#intro-servicios h2 {
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .intro-servicios h3 {
@@ -269,6 +267,23 @@ body {
     font-weight: 400;
 }
 
+@media (max-width: 768px) {
+    .intro-servicios {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .intro-servicios h3, .intro-servicios p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .intro-servicios a.btn {
+        margin: 10px auto;
+        width: 150px;
+    }
+}
+
 .btn {
     display: inline-block;
     background-color: #ff8000;
@@ -286,34 +301,34 @@ html {
 }
 
 #linkedin-cards {
-    margin: 60px;
-    padding: 20px; /* Espacio alrededor del contenedor */
-    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+    margin: 5vw;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #linkedin-cards h2 {
-    text-align: left; /* Centra el texto del encabezado */
-    margin-bottom: 20px; /* Espacio debajo del encabezado */
-    font-size: 24px; /* Tamaño del texto del encabezado */
-    font-weight: bold; /* Negrita para el encabezado */
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .linkedin-card-container {
     display: flex;
-    justify-content: space-between; /* Espacio igual entre tarjetas */
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en una nueva línea si no caben en una sola */
-    gap: 20px; /* Espacio entre tarjetas */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .linkedin-card {
-    flex: 1 1 300px; /* Permite que las tarjetas se ajusten de manera flexible */
-    max-width: 100%; /* Asegura que las tarjetas no excedan el contenedor */
+    flex: 1 1 300px;
+    max-width: 100%;
 }
 
 .linkedin-card iframe {
-    width: 100%; /* Ancho del iframe ajustado al contenedor */
-    height: 400px; /* Ajusta la altura aquí según tus necesidades */
-    border: none; /* Elimina el borde del iframe */
+    width: 100%;
+    height: 400px;
+    border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -322,32 +337,25 @@ html {
     padding: 80px 40px;
     background-color: white;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 90%;
     box-sizing: border-box;
 }
 
-h2 {
+h2, h3 {
     font-family: 'Exo 2', sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
-    color: rgb(9, 9, 43);
-}
-
-h3 {
-    font-family: "PT Sans Caption", sans-serif;
-    font-weight: 700;
-    font-style: normal;
     color: rgb(9, 9, 43);
 }
 
 .servicio {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 2rem;
+    padding: 2rem;
     background-color: #f9f9f9;
     border-radius: 8px;
+    flex-wrap: wrap;
 }
 
 .servicio h3 {
@@ -355,14 +363,15 @@ h3 {
 }
 
 .servicio-image {
-    max-width: 35%;
+    max-width: 25vw;
     height: auto;
     border-radius: 8px;
-    margin: 0 20px;
+    margin: .5rem;
 }
 
 .servicio-content {
     max-width: 60%;
+    padding: 2rem;
 }
 
 .servicio.derecha .servicio-content {
@@ -381,11 +390,33 @@ h3 {
     order: 1;
 }
 
+@media (max-width: 768px) {
+    .servicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio-image, .servicio-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .servicio-image {
+        order: 1;
+    }
+
+    .servicio-content {
+        order: 2;
+        margin-top: 1rem;
+    }
+}
+
+
 .nosotros-container {
     padding: 80px 40px;
     background-color: white;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 90%;
     box-sizing: border-box;
 }
 
@@ -433,17 +464,18 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* Espacio entre tarjetas */
-    padding: 20px; /* Opcional: espacio interno para mejorar el aspecto */
+    gap: 30px;
+    padding: 20px;
 }
 
 .card {
     width: 200px;
     height: 300px;
-    perspective: 1000px; /* Necesario para el efecto de giro */
-    position: relative; /* Asegura que los elementos absolutos dentro estén bien posicionados */
+    perspective: 1000px;
+    position: relative;
     border-radius: 15px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card-front, .card-back {
@@ -459,31 +491,27 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Work Sans', sans-serif;
-    font-size: small;
-    font-weight: 400;
+    font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    padding: 2px;
-    z-index: -1;
     text-align: center;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    font-weight: bold;
     border-radius: 10px;
 }
-
 
 .card-back {
     background-color: #fff;
     color: #333;
     display: flex;
+    align-items: center;
     justify-content: center;
-    transform: rotateY(180deg); /* Gira el reverso para ocultarlo inicialmente */
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra para un efecto de profundidad */
-    border-radius: 10px; /* Igual que en el frente, para consistencia */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: rotateY(180deg);
+    border-radius: 10px;
 }
 
 .card-text {
@@ -491,15 +519,24 @@ h3 {
     font-size: small;
     font-weight: 400;
     padding: 10px;
-    text-align: center; /* Alinea el texto para una mejor presentación */
+    text-align: center;
 }
 
+
 .card:hover .card-front {
-    transform: rotateY(180deg); /* Gira el frontal para mostrar el reverso al pasar el cursor */
+    transform: rotateY(180deg);
 }
 
 .card:hover .card-back {
-    transform: rotateY(0deg); /* Muestra el reverso al pasar el cursor */
+    transform: rotateY(0deg);
+}
+
+.card-flip .card-front {
+    transform: rotateY(180deg);
+}
+
+.card-flip .card-back {
+    transform: rotateY(0deg);
 }
 
 footer {
@@ -566,8 +603,8 @@ footer {
 }
 
 .social-logo {
-    width: 96px; /* Ajusta el tamaño según tu preferencia */
+    width: 90px;
     height: auto;
-    margin-right: 5px; /* Espacio entre el logo y el texto */
-    vertical-align: middle; /* Alinea el logo con el texto */
+    margin-right: 5px;
+    vertical-align: middle;
 }
