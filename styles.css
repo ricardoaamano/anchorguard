@@ -204,7 +204,6 @@ body {
     font-family: 'Exo 2', sans-serif;
     font-weight: 600;
     font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 #intro p {
@@ -224,7 +223,6 @@ body {
     align-items: center;
     margin-left: 2vw;
     margin-right: 2vw;
-    margin-bottom: 2rem;
     padding: 2rem;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -302,13 +300,11 @@ html {
 
 #linkedin-cards {
     margin: 5vw;
-    padding: 20px;
     box-sizing: border-box;
 }
 
 #linkedin-cards h2 {
     text-align: left;
-    margin-bottom: 3rem;
     font-size: 24px;
     font-weight: bold;
 }
@@ -536,6 +532,30 @@ h2, h3 {
 
 .card-flip .card-back {
     transform: rotateY(0deg);
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.contacto img {
+    width: 10vw;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.text {
+    flex: 1;
 }
 
 footer {
