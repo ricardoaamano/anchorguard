@@ -178,17 +178,19 @@
                 navLinks.classList.toggle('active');
             }
         </script>
-        <script>
-            // Seleccionar todas las tarjetas
-            const cards = document.querySelectorAll('.card');
-        
-            // Añadir el evento de clic a cada tarjeta
-            cards.forEach(card => {
-                card.addEventListener('click', function() {
-                    // Alternar la clase 'card-flip' al hacer clic
-                    this.classList.toggle('card-flip');
-                });
+<script>
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('click', function() {
+            cards.forEach(otherCard => {
+                if (otherCard !== this) {
+                    otherCard.classList.remove('card-flip');
+                }
             });
-        </script>            
+            this.classList.toggle('card-flip');
+        });
+    });
+</script>
+         
     </body>
 </html>
