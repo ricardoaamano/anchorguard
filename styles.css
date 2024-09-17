@@ -12,7 +12,6 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-size: medium;
     font-weight: 400;
-    font-style: normal;
 }
 
 .navbar {
@@ -180,13 +179,6 @@ p {
     width: 160px;
 }
 
-body {
-    font-family: 'Work Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
-
 .container {
     max-width: 90%;
     margin-left: 5vw;
@@ -337,8 +329,16 @@ html {
     box-sizing: border-box;
 }
 
-h2, h3 {
+h2 {
     font-family: 'Exo 2', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: rgb(9, 9, 43);
+}
+
+h3 {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
     font-optical-sizing: auto;
     font-weight: 600;
     color: rgb(9, 9, 43);
@@ -406,7 +406,6 @@ h2, h3 {
     }
 }
 
-
 .nosotros-container {
     padding: 80px 40px;
     background-color: white;
@@ -415,23 +414,18 @@ h2, h3 {
     box-sizing: border-box;
 }
 
+.nosotros {
+    background-color: #f9f9f9;
+    padding: 2vw;
+    border-radius: 8px;
+}
+
 .nosotros h2 {
     font-family: 'Exo 2', sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     color: rgb(9, 9, 43);
-}
-
-.nosotros h3 {
-    text-align: center;
-}
-
-.nosotros p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #444;
-    margin-bottom: 20px;
 }
 
 .nosotros a.nosotros h3 {
@@ -453,6 +447,17 @@ h2, h3 {
 .nosotros-image img {
     width: 150px;
     height: auto;
+}
+
+.nosotros-lema {
+    text-align: center;
+}
+
+.mision {
+    background-color: #f9f9f9;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 8px;
 }
 
 .card-container {
@@ -534,24 +539,66 @@ h2, h3 {
     transform: rotateY(0deg);
 }
 
-.contacto {
+.contacto-container {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.contacto img {
-    width: 10vw;
-    height: auto;
+.contacto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.contacto-texto {
+    flex: 1;
+}
+
+.contacto-img {
+    width: auto;
+    max-height: 200px;    
     margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+.social-logo {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.nosotros-image {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.nosotros-image .logo-img {
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .contacto-img {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+        max-height: none;
+    }
 }
 
 .text {
