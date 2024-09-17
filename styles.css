@@ -534,10 +534,6 @@ h2, h3 {
     transform: rotateY(0deg);
 }
 
-h4 {
-    text-align: center;    
-}
-
 .contacto {
     display: flex;
     justify-content: space-between;
