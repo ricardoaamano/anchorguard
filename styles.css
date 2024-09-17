@@ -428,15 +428,15 @@ h3 {
     color: rgb(9, 9, 43);
 }
 
-.nosotros a.nosotros h3 {
+.nosotros a.nosotros {
+    display: block;
     text-align: center;
-    color: #0066cc;
-    font-weight: bold;
-    text-decoration: none;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .nosotros a.nosotros:hover h3 {
-    color: #004499;
+    color: #013472;
 }
 
 .nosotros-image {
