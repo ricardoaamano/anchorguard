@@ -545,21 +545,21 @@ h3 {
 
 .contacto {
     display: flex;
-    flex-direction: column; /* Cambiado a columna para que los elementos se apilen */
+    flex-direction: column;
     align-items: flex-start;
     margin-bottom: 1.5rem;
     padding: 1rem;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho total */
+    box-sizing: border-box;
 }
 
 .text {
     font-family: 'Work Sans', sans-serif;
     font-size: medium;
     font-weight: 400;
-    margin: 0; /* Elimina márgenes para evitar desajustes */
+    margin: 0;
 }
 
 .contacto p {
@@ -567,20 +567,30 @@ h3 {
 }
 
 .text a {
-    color: #013472; /* Color del enlace */
-    text-decoration: underline; /* Subrayar el enlace */
-    transition: color 0.3s; /* Efecto de transición */
+    color: #013472;
+    transition: color 0.3s
+}
+
+.contacto-a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    margin: 0;
+    color: #013472;
+    transition: color 0.3s;
+    word-break: break-all;
 }
 
 .text a:hover {
-    color: #380172; /* Color en hover */
+    color: #380172;
 }
-
 
 .contacto-img {
     width: auto;
-    max-height: 200px;    
-    margin-left: 1rem;
+    max-height: 200px;
+    margin-left: auto;  /* Ajuste para centrar horizontalmente */
+    margin-right: auto; /* Ajuste para centrar horizontalmente */
+    display: block;     /* Asegura que la imagen ocupe el 100% del ancho disponible */
     flex-shrink: 0;
 }
 
@@ -646,7 +656,6 @@ footer {
     font-size: medium;
     font-weight: 300;
     flex: 1;
-    margin: 0 10px;
 }
 
 .footer-section h2 {
@@ -654,7 +663,6 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Links Styles */
 .footer-links {
     display: flex;
     flex-wrap: wrap;
