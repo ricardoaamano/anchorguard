@@ -371,13 +371,12 @@ h3 {
         grid-column: 1 / span 3;
         grid-row: 3;
         padding: 2vw;
-        justify-content: center; /* Centrar el botón dentro de su contenedor */
     }
 
     .servicios-btn-container {
-        grid-column: span 3; /* Ocupará las 3 columnas del grid en pantallas grandes */
+        grid-column: span 3;
         display: flex;
-        justify-content: center; /* Centrar el botón dentro de su contenedor */
+        justify-content: center;
     }
 }
 
@@ -413,13 +412,12 @@ h3 {
     .servicio-izquierda .servicios-btn {
         grid-column: 1 / span 3;
         grid-row: 3;
-        justify-content: center; /* Centrar el botón dentro de su contenedor */
     }
 
     .servicios-btn-container {
-        grid-column: span 3; /* Ocupará las 3 columnas del grid en pantallas grandes */
+        grid-column: span 3;
         display: flex;
-        justify-content: center; /* Centrar el botón dentro de su contenedor */
+        justify-content: center;
     }
 
     .servicio-image img {
@@ -439,6 +437,12 @@ h3 {
     max-height: 300px;
     height: auto;
     border-radius: 8px;
+}
+
+.servicios-btn-container {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
 }
 
 .nosotros-container {
