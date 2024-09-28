@@ -799,6 +799,36 @@ input[type="submit"]:hover {
     transform: scale(1.2);
 }
 
+.aviso-container {
+    padding: 80px 40px;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.aviso {
+    background-color: #f9f9f9;
+    padding: 2vw;
+    border-radius: 8px;
+}
+
+.aviso a.aviso {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.aviso-cierre h3 {
+        color: #215ca3;
+        text-align: center;
+}
+
+.aviso-cierre h3:hover {
+    color: #5e3a8c;
+}
+
 footer {
     background-color: gray;
     color: white;
