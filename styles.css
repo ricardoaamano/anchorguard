@@ -799,6 +799,34 @@ input[type="submit"]:hover {
     transform: scale(1.2);
 }
 
+.linkedin-logo {
+    width: 90px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.linkedin-logo:hover {
+    scale: 1.1;
+}
+
+.logo-cierre {
+    max-height: 10vh;
+    margin-right: 2vw;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo-cierre {
+        max-height: 7vh;
+        margin-right: 1.5vw;
+    }
+}
+
+.logo-cierre:hover {
+    scale: 1.1;
+}
+
 .aviso-container {
     padding: 80px 40px;
     background-color: white;

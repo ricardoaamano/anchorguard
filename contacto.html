@@ -82,8 +82,7 @@
                     </div>
                 </div>
                 <div class="contacto-columnas">
-                    <p class="columna-text">¿Por qué no pedimos número de teléfono? Priorizamos tu seguridad y privacidad. Al no pedir número de teléfono, reducimos el riesgo de intrusiones y respetamos tu tiempo, permitiéndote elegir cuándo y cómo respondes a nuestros mensajes.
-                    </p>
+                    <p class="columna-text">¿Por qué no pedimos número de teléfono? Priorizamos tu seguridad y privacidad. Al no pedir número de teléfono, reducimos el riesgo de intrusiones y respetamos tu tiempo, permitiéndote elegir cuándo y cómo respondes a nuestros mensajes.</p>
                     <p class="columna-text">El correo electrónico es una forma eficiente y suficiente para mantener una comunicación clara y segura.</p>
                     <p class="columna-text">Consulta nuestro aviso de privacidad en <a class="columna-a" href="avisodeprivacidad.html">www.anchorguardsecurity.com/avisodeprivacidad</a></p>
                 </div>
@@ -98,16 +97,11 @@
                 </div>
             </div>
             <div class="contacto">
-                <p class="text">Síguenos en 
-                    <a href="https://www.linkedin.com/company/anchorguardsecurity/" target="_blank">
-                        <img src="linkedin-logo.png" alt="LinkedIn" class="social-logo">
-                    </a> 
-                    para leer nuestros artículos con información importante para ti. Comparte con tus contactos y recomiéndanos.
-                </p>
+                <p class="text">Síguenos en <a href="https://www.linkedin.com/company/anchorguardsecurity/" target="_blank"><img class="linkedin-logo" src="linkedin-logo.png" alt="LinkedIn" class="social-logo"></a>para leer nuestros artículos con información importante para ti. Comparte con tus contactos y recomiéndanos.</p>
             </div>
             <div class="nosotros-image">
-                <a href="https://www.linkedin.com/company/anchorguardsecurity/" target="_blank">
-                    <img src="logo2.png" alt="Logo de AnchorGuard Security #2" class="logo-img">
+                <a href="index.html" target="_blank">
+                    <img src="logo2.png" alt="Logo de AnchorGuard Security #2" class="logo-cierre">
                 </a>
                 <h3>Anclados en la protección, seguros en el futuro</h3>
             </div>
@@ -147,6 +141,24 @@
                 const navLinks = document.querySelector('.nav-links');
                 navLinks.classList.toggle('active');
             }
-        </script>    
+        </script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+           (function(){
+              emailjs.init("Soa13EIqax10Un8KE");
+           })();
+        </script>
+        <script type="text/javascript">
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();         
+                emailjs.sendForm('service_o2juoj7', 'template_4otuce1', this)
+                    .then(function() {
+                        alert('Mensaje enviado con éxito');
+                        document.getElementById('contact-form').reset();
+                    }, function(error) {
+                        alert('Error al enviar el mensaje: ' + JSON.stringify(error));
+                    });
+            });
+         </script>    
     </body>
 </html>
