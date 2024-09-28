@@ -285,7 +285,7 @@ html {
 
 @media (max-width: 768px) {
     html {
-        scroll-padding-top: 330px;
+        scroll-padding-top: 80px;
     }
 }
 
@@ -363,14 +363,21 @@ h3 {
     }
 
     .servicio-image img {
-        min-width: 120px;
+        min-width: 200px;
     }
 
-    .servicio-derecha .btn,
-    .servicio-izquierda .btn {
+    .servicio-derecha .servicios-btn,
+    .servicio-izquierda .servicios-btn {
         grid-column: 1 / span 3;
         grid-row: 3;
         padding: 2vw;
+        justify-content: center; /* Centrar el botón dentro de su contenedor */
+    }
+
+    .servicios-btn-container {
+        grid-column: span 3; /* Ocupará las 3 columnas del grid en pantallas grandes */
+        display: flex;
+        justify-content: center; /* Centrar el botón dentro de su contenedor */
     }
 }
 
@@ -402,16 +409,24 @@ h3 {
         grid-row: 1 / span 2;
     }
 
-    .servicio-derecha .btn,
-    .servicio-izquierda .btn {
+    .servicio-derecha .servicios-btn,
+    .servicio-izquierda .servicios-btn {
         grid-column: 1 / span 3;
         grid-row: 3;
+        justify-content: center; /* Centrar el botón dentro de su contenedor */
+    }
+
+    .servicios-btn-container {
+        grid-column: span 3; /* Ocupará las 3 columnas del grid en pantallas grandes */
+        display: flex;
+        justify-content: center; /* Centrar el botón dentro de su contenedor */
     }
 
     .servicio-image img {
-        min-width: 120px;
+        min-width: 200px;
         height: auto;
     }
+
 }
 
 .servicio-image {
@@ -424,6 +439,25 @@ h3 {
     max-height: 300px;
     height: auto;
     border-radius: 8px;
+}
+
+.servicios-btn {
+    display: inline-block;
+    background-color: #ff8000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    width: 160px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.servicios-btn:hover {
+    background-color: #215ca3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nosotros-container {
