@@ -290,12 +290,6 @@ p {
         grid-row: 1;
     }
 
-    h3 {
-        grid-column: 1 / 2;
-        grid-row: 1;
-        text-align: left;
-    }
-
     .text {
         grid-column: 2 / 3;
         grid-row: 1 / 3;
@@ -391,8 +385,9 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#servicios, #contacto, #cultura {
-    padding: 80px 40px;
+#servicios, #nosotros, #contacto, #cultura, #aviso {
+    padding-top: 80px;
+    padding-bottom: 20px;
     background-color: white;
     margin: 0 auto;
     max-width: 90%;
@@ -412,6 +407,10 @@ h3 {
     font-optical-sizing: auto;
     font-weight: 600;
     color: rgb(9, 9, 43);
+}
+
+.servicio-content h3 {
+    text-align: center;
 }
 
 .servicio-derecha,
@@ -516,26 +515,24 @@ h3 {
     justify-content: center;
 }
 
-.nosotros-container {
-    padding: 80px 40px;
-    background-color: white;
-    margin: 0 auto;
-    max-width: 90%;
-    box-sizing: border-box;
-}
-
-.nosotros {
-    background-color: #f9f9f9;
-    padding: 2vw;
-    border-radius: 8px;
-}
-
 .nosotros h2 {
     font-family: 'Exo 2', sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     color: rgb(9, 9, 43);
+}
+
+.nosotros-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 2vw;
+    box-sizing: border-box;
+    margin-bottom: 2vw;
 }
 
 .nosotros a.nosotros {
@@ -653,18 +650,22 @@ h3 {
     transform: rotateY(0deg);
 }
 
-.contacto {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-}
-
 .text {
     font-family: 'Work Sans', sans-serif;
     font-size: medium;
     font-weight: 400;
+    margin-bottom: 2vw;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 2vw;
+    box-sizing: border-box;
     margin-bottom: 2vw;
 }
 
@@ -812,6 +813,7 @@ input[type="submit"]:hover {
 
 .icon-container {
     display: flex;
+    padding: 40px;
     justify-content: center;
     margin: 40px;
 }
@@ -860,14 +862,6 @@ input[type="submit"]:hover {
     scale: 1.1;
 }
 
-.aviso-container {
-    padding: 80px 40px;
-    background-color: white;
-    margin: 0 auto;
-    max-width: 90%;
-    box-sizing: border-box;
-}
-
 .aviso {
     background-color: #f9f9f9;
     padding: 2vw;
@@ -882,8 +876,8 @@ input[type="submit"]:hover {
 }
 
 .aviso-cierre h3 {
-        color: #215ca3;
-        text-align: center;
+    color: #215ca3;
+    text-align: center;
 }
 
 .aviso-cierre h3:hover {
