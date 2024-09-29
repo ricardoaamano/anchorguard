@@ -236,16 +236,21 @@ p {
     align-items: center;
 }
 
-.intro-icon {
+.intro-servicios a {
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+}
+
+.intro-servicios a img {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    width: 100px;
+    width: 120px;
     height: auto;
-    justify-self: center;
     transition: transform 0.3s ease;
 }
 
-.intro-icon:hover {
+.intro-servicios a img:hover {
     transform: scale(1.2);
 }
 
@@ -285,9 +290,13 @@ p {
         gap: 1rem;
     }
 
-    .intro-icon {
+    .intro-servicios a img {
         grid-column: 1 / 2;
         grid-row: 1;
+    }
+
+    .intro-servicios a img:hover {
+        transform: scale(1.2);
     }
 
     .text {
@@ -309,10 +318,14 @@ p {
         grid-template-rows: auto auto auto auto;
     }
 
-    .intro-icon {
+    .intro-servicios a img {
         grid-column: 1;
         grid-row: 1;
         justify-self: center;
+    }
+
+    .intro-servicios a img:hover {
+        transform: scale(1.2);
     }
 
     .intro-servicios h3 {
