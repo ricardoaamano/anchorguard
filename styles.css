@@ -691,6 +691,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    padding: 0 40px;
 }
 
 .columna-formulario {
@@ -704,14 +705,11 @@ h3 {
     font-size: medium;
     font-weight: 400;
     color: silver;
-    margin-bottom: 2vw;
-    padding-left: 80px;
 }
 
 @media (max-width: 1024px) {
     .columna-text {
         padding-left: 0;
-        padding: 4vw;
     }
 }
 
@@ -727,7 +725,7 @@ h3 {
 
 .columna-imagen {
     flex: 1;
-    padding: 4rem;
+    padding: 2rem;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
