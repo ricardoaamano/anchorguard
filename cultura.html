@@ -184,19 +184,19 @@
                 navLinks.classList.toggle('active');
             }
         </script>
-<script>
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        card.addEventListener('click', function() {
-            cards.forEach(otherCard => {
-                if (otherCard !== this) {
-                    otherCard.classList.remove('card-flip');
-                }
+        <script>
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    cards.forEach(otherCard => {
+                        if (otherCard !== this) {
+                            otherCard.classList.remove('card-flip');
+                        }
+                    });
+                    this.classList.toggle('card-flip');
+                });
             });
-            this.classList.toggle('card-flip');
-        });
-    });
-</script>
-         
+        </script>
+        <script src="scripts.js"></script>
     </body>
 </html>
