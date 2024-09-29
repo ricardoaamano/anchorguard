@@ -100,19 +100,19 @@ body {
 
 @media (max-width: 768px) {
     .nav-links {
-        max-height: 0;
-        overflow: hidden;
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 40px;
         right: 0;
         background-color: rgb(9, 9, 43);
         width: 100%;
-        transition: max-height 0.5s ease-out;
+        transition: max-height 0.5s ease; /* Para efecto de cortina */
     }
 
     .nav-links.active {
-        max-height: 300px;
+        display: flex;
+        max-height: 500px; /* Ajusta según la altura máxima que esperas */
     }
 
     .nav-links li {

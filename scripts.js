@@ -1,23 +1,26 @@
-let timeout;
+const menuIcon = document.querySelector('.menu-icon');
+const navLinks = document.querySelector('.nav-links');
+let closeTimeout;
 
 function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
 }
 
-document.addEventListener('click', function(event) {
-    const navLinks = document.querySelector('.nav-links');
-    const menuIcon = document.querySelector('.menu-icon');
-
-    if (!menuIcon.contains(event.target) && !navLinks.contains(event.target)) {
-        navLinks.classList.remove('active');
-    }
-});
-
-document.querySelector('.nav-links').addEventListener('mouseleave', function() {
-    const navLinks = document.querySelector('.nav-links');
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
+navLinks.addEventListener('mouseleave', () => {
+    closeTimeout = setTimeout(() => {
         navLinks.classList.remove('active');
     }, 300);
 });
+
+navLinks.addEventListener('mouseenter', () => {
+    clearTimeout(closeTimeout);
+});
+
+function closeMenu(event) {
+    if (!navLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+        navLinks.classList.remove('active');
+    }
+}
+
+menuIcon.addEventListener('click', toggleMenu);
+document.addEventListener('click', closeMenu);
