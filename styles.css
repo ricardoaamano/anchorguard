@@ -100,17 +100,19 @@ body {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        max-height: 0;
+        overflow: hidden;
         flex-direction: column;
         position: absolute;
         top: 40px;
         right: 0;
         background-color: rgb(9, 9, 43);
         width: 100%;
+        transition: max-height 0.5s ease-out;
     }
 
     .nav-links.active {
-        display: flex;
+        max-height: 300px;
     }
 
     .nav-links li {
