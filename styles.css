@@ -10,7 +10,7 @@ body {
 
 .text {
     font-family: 'Work Sans', sans-serif;
-    font-size: medium;
+    font-size: 1 rem;
     font-weight: 400;
     margin-bottom: 2vw;
 }
@@ -40,7 +40,6 @@ body {
     align-items: center;
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -73,7 +72,7 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: .8rem;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -157,6 +156,11 @@ body {
     text-align: center;
 }
 
+.overlay h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
 h1 {
     font-family: 'Exo 2', sans-serif;
     font-optical-sizing: auto;
@@ -167,7 +171,7 @@ h1 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1 rem
 }
 
 .btn {
@@ -218,7 +222,7 @@ p {
 }
 
 #intro p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 #intro-servicios {
@@ -264,6 +268,7 @@ p {
     text-align: center;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
+    font-size: 1.2rem;
     color: rgb(9, 9, 43);
     margin: 0;
     padding: 10px;
@@ -273,7 +278,7 @@ p {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     font-family: 'Work Sans', sans-serif;
-    font-size: medium;
+    font-size: 1 rem;
     font-weight: 400;
     text-align: left;
     margin: 0;
@@ -333,12 +338,14 @@ p {
     }
 
     .intro-servicios h3 {
+        font-size: 1.2rem;
         grid-column: 1;
         grid-row: 2;
         text-align: center;
     }
 
     .intro-servicios p {
+        font-size: 1rem;
         grid-column: 1;
         grid-row: 3;
         text-align: left;
@@ -413,6 +420,7 @@ html {
 
 h2 {
     font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
     font-optical-sizing: auto;
     font-weight: 600;
     color: rgb(9, 9, 43);
@@ -420,6 +428,7 @@ h2 {
 
 h3 {
     font-family: "PT Sans Caption", sans-serif;
+    font-size: 1.2rem;
     font-weight: 700;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -427,6 +436,7 @@ h3 {
 }
 
 .servicio-content h3 {
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -532,14 +542,6 @@ h3 {
     justify-content: center;
 }
 
-.nosotros h2 {
-    font-family: 'Exo 2', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    color: rgb(9, 9, 43);
-}
-
 .nosotros-container {
     display: flex;
     flex-direction: column;
@@ -553,6 +555,7 @@ h3 {
 }
 
 .nosotros a.nosotros {
+    font-size: 1rem;
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -560,6 +563,7 @@ h3 {
 }
 
 .nosotros h3 {
+    font-size: 1.2rem;
     color: #215ca3;
 }
 
@@ -604,6 +608,7 @@ h3 {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
+    border: 2px solid transparent;
 }
 
 .card-front, .card-back {
@@ -612,6 +617,9 @@ h3 {
     position: absolute;
     backface-visibility: hidden;
     transition: transform 0.6s ease-in-out;
+    background: linear-gradient(#f9f9f9, rgb(239, 239, 239)) padding-box, 
+    linear-gradient(135deg, #c06047, #feb47b) border-box;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .card-front {
@@ -631,12 +639,11 @@ h3 {
 }
 
 .card-back {
-    background-color: #fff;
     color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 1px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: rotateY(180deg);
     border-radius: 10px;
@@ -644,7 +651,7 @@ h3 {
 
 .card-text {
     font-family: 'Work Sans', sans-serif;
-    font-size: small;
+    font-size: .8rem;
     font-weight: 400;
     padding: 10px;
     text-align: center;
@@ -667,9 +674,18 @@ h3 {
     transform: rotateY(0deg);
 }
 
+@media (min-width: 768px) and (max-width: 1300px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px 2vw;
+        justify-items: center;
+    }
+}
+
 .text {
     font-family: 'Work Sans', sans-serif;
-    font-size: medium;
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 2vw;
 }
@@ -719,7 +735,7 @@ h3 {
 
 .columna-text {
     font-family: 'Work Sans', sans-serif;
-    font-size: medium;
+    font-size: 1rem;
     font-weight: 400;
     color: silver;
 }
@@ -891,6 +907,7 @@ input[type="submit"]:hover {
 }
 
 .aviso-cierre h3 {
+    font-size: 1.2rem;
     color: #215ca3;
     text-align: center;
 }
@@ -921,7 +938,7 @@ footer {
 .footer-section {
     padding-bottom: 10px;
     font-family: "Fira Sans", sans-serif;
-    font-size: medium;
+    font-size: 1rem;
     font-weight: 300;
     flex: 1;
 }
@@ -935,7 +952,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: small;
+    font-size: .7rem;
     list-style: none;
 }
 
@@ -958,7 +975,6 @@ footer {
 .social-links {
     display: flex;
     justify-content: center;
-    font-size: small;
     list-style: none;
     padding: 0;
     margin: 0;
