@@ -724,12 +724,12 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 5vw;
 }
 
 .columna-formulario {
     flex: 1;
-    padding: 4rem;
+    padding-top: 1rem;
     box-sizing: border-box;
 }
 
