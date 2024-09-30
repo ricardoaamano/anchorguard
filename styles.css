@@ -617,8 +617,6 @@ h3 {
     position: absolute;
     backface-visibility: hidden;
     transition: transform 0.6s ease-in-out;
-    background: linear-gradient(#f9f9f9, rgb(239, 239, 239)) padding-box, 
-    linear-gradient(135deg, #c06047, #feb47b) border-box;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -644,9 +642,9 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 1px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: rotateY(180deg);
     border-radius: 10px;
+    background: linear-gradient(135deg, #f9f9f9, #0a2a7a1c); /* Degradado de #ff8000 a #ffcc00 */
 }
 
 .card-text {
