@@ -258,6 +258,10 @@ p {
     align-items: center;
 }
 
+.intro-servicios a .icon {
+    width: 100px;
+}
+
 .intro-servicios a img {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -902,7 +906,8 @@ input[type="submit"]:hover {
     width: 100px;
     height: auto;
     transition: transform 0.3s ease;
-    padding-left: 5vw;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 .icon:hover {
