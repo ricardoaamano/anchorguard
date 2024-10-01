@@ -12,7 +12,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-size: 1 rem;
     font-weight: 400;
-    margin-bottom: 1vw;
+    padding: 2vh;
 }
 
 .navbar {
@@ -724,13 +724,6 @@ h3 {
         gap: 10px 2vw;
         justify-items: center;
     }
-}
-
-.text {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 1vh
 }
 
 .contacto {
