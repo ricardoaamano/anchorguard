@@ -12,7 +12,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-size: 1 rem;
     font-weight: 400;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
 }
 
 .navbar {
@@ -246,17 +246,16 @@ p {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto;
-    gap: 1rem;
-    padding: 2rem;
+    padding: 2vh;
     background-color: #f9f9f9;
     border-radius: 8px;
     align-items: center;
 }
 
 .intro-servicios a {
-    display: flex; /* Usamos flexbox */
-    justify-content: center; /* Centramos horizontalmente */
-    align-items: center; /* Centramos verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-servicios a img {
@@ -280,7 +279,6 @@ p {
     font-size: 1.2rem;
     color: rgb(9, 9, 43);
     margin: 0;
-    padding: 10px;
 }
 
 .intro-servicios p {
@@ -291,14 +289,34 @@ p {
     font-weight: 400;
     text-align: left;
     margin: 0;
-    padding: 10px;
+    padding: vh;
 }
 
-.btn {
+.intro-btn {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
     align-self: center;
     justify-self: center;
+}
+
+.intro-btn {
+    display: inline-block;
+    background-color: #ff8000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 160px;
+    margin-bottom: 4vh;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.intro-btn:hover {
+    background-color: #215ca3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1024px) {
@@ -322,7 +340,7 @@ p {
         grid-row: 1 / 3;
     }
 
-    .btn {
+    .intro-btn {
         grid-column: 1 / 3;
         grid-row: 3;
         align-self: center;
@@ -361,7 +379,7 @@ p {
         width: 100%;
     }
 
-    .btn {
+    .intro-btn {
         grid-column: 1;
         grid-row: 4;
         max-width: 60%;
@@ -369,7 +387,6 @@ p {
         align-self: center;
     }
 }
-
 
 html {
     scroll-padding-top: 100px;
@@ -449,6 +466,25 @@ h3 {
     text-align: center;
 }
 
+.servicios-btn {
+    display: inline-block;
+    background-color: #ff8000;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 4vh;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 160px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.servicios-btn:hover {
+    background-color: #215ca3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .servicio-derecha,
 .servicio-izquierda {
     display: flex;
@@ -457,9 +493,9 @@ h3 {
     align-items: center;
     background-color: #f9f9f9;
     border-radius: 8px;
-    padding: 2vw;
+    padding: 2vh;
     box-sizing: border-box;
-    margin-bottom: 2vw;
+    margin-bottom: 2vh;
 }
 
 @media (max-width: 768px) {
@@ -596,7 +632,7 @@ h3 {
 
 .mision {
     background-color: #f9f9f9;
-    padding: 2vw;
+    padding: 2vh;
     margin-bottom: 2vw;
     border-radius: 8px;
 }
@@ -694,7 +730,7 @@ h3 {
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 2vw;
+    margin-bottom: 1vh
 }
 
 .contacto {
@@ -902,8 +938,15 @@ input[type="submit"]:hover {
 
 .aviso {
     background-color: #f9f9f9;
-    padding: 2vw;
+    padding: 4vh;
     border-radius: 8px;
+}
+
+.aviso-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4vh
 }
 
 .aviso a.aviso {
