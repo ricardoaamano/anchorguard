@@ -314,7 +314,6 @@ p {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
 .intro-btn:hover {
     background-color: #215ca3;
     transform: translateY(-2px);
@@ -404,6 +403,22 @@ html {
     html {
         scroll-padding-top: 280px;
     }
+}
+
+#proceso {
+    margin: 5vw;
+    box-sizing: border-box;
+}
+
+.proceso-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proceso-img img {
+    max-width: 80%;
+    height: auto;
 }
 
 #linkedin-cards {
