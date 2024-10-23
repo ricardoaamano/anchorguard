@@ -1001,7 +1001,8 @@ input[type="submit"]:hover {
     align-items: left;
     background-color: #f9f9f9;
     border-radius: 8px;
-    padding: 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
     margin-top: 40px;
     box-sizing: border-box;
     margin-bottom: 2vw;
@@ -1022,7 +1023,6 @@ input[type="submit"]:hover {
 }
 
 .cursos-card p {
-    padding-bottom: 20px;
     margin: 0%;
 }
 
