@@ -1016,6 +1016,13 @@ input[type="submit"]:hover {
     margin: 0%;
 }
 
+#personalizados {
+    padding-bottom: 120px;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
 .aviso {
     background-color: #f9f9f9;
     padding: 4vh;
