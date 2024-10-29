@@ -525,8 +525,8 @@ h3 {
 .servicio-content p {
     text-align: left;
     padding-bottom: .8vw;
-    padding-left: 3vh;
-    padding-right: 3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
 }
 
 .servicios-btn {
@@ -565,10 +565,6 @@ h3 {
     .servicio-derecha,
     .servicio-izquierda {
         flex-direction: column;
-    }
-
-    .servicio-image img {
-        min-width: 200px;
     }
 
     .servicio-derecha .servicios-btn,
@@ -624,12 +620,6 @@ h3 {
         display: flex;
         justify-content: center;
     }
-
-    .servicio-image img {
-        min-width: 200px;
-        height: auto;
-    }
-
 }
 
 .servicio-image {
@@ -638,9 +628,8 @@ h3 {
 }
 
 .servicio-image img {
-    max-width: 70%;
-    max-height: 300px;
-    height: auto;
+    max-width: 80%;
+    max-height: auto;
     border-radius: 8px;
 }
 
