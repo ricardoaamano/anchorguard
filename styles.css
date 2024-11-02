@@ -1126,3 +1126,18 @@ footer {
     margin-right: 5px;
     vertical-align: middle;
 }
+
+.social-logo:hover {
+    scale: 1.1;
+}
+
+.x-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.x-logo:hover {
+    scale: 1.1;
+}
