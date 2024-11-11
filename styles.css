@@ -52,6 +52,7 @@ body {
 .nav-links {
     font-family: "Fira Sans", sans-serif;
     font-weight: 300;
+    font-style: normal;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -323,6 +324,7 @@ p {
     text-align: center;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 700;
+    font-style: normal;
     font-size: 1.2rem;
     color: rgb(9, 9, 43);
     margin: 0;
@@ -510,10 +512,10 @@ h2 {
 
 h3 {
     font-family: "PT Sans Caption", sans-serif;
-    font-size: 1.2rem;
     font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
     font-optical-sizing: auto;
-    font-weight: 600;
     color: rgb(9, 9, 43);
 }
 
@@ -1074,8 +1076,9 @@ footer {
 .footer-section {
     padding-bottom: 10px;
     font-family: "Fira Sans", sans-serif;
-    font-size: .8rem;
     font-weight: 300;
+    font-style: normal;
+    font-size: .8rem;
     flex: 1;
 }
 
