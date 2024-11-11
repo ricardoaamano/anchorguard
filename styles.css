@@ -369,7 +369,7 @@ p {
 }
 
 html {
-    scroll-padding-top: 140px;
+    scroll-padding-top: 160px;
 }
 
 @media (max-width: 1024px) {
