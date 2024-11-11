@@ -443,7 +443,7 @@ html {
 
 @media (max-width: 768px) {
     html {
-        scroll-padding-top: 400px;
+        scroll-padding-top: 350px;
     }
 }
 
