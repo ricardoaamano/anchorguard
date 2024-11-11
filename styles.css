@@ -395,6 +395,10 @@ p {
         align-self: center;
         justify-self: center;
     }
+
+    html {
+        scroll-padding-top: 100px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -435,13 +439,6 @@ p {
         justify-self: center;
         align-self: center;
     }
-}
-
-html {
-    scroll-padding-top: 100px;
-}
-
-@media (max-width: 768px) {
     html {
         scroll-padding-top: 350px;
     }
