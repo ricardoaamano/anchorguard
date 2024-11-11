@@ -163,6 +163,7 @@ body {
     .dropdown-menu {
         background-color: rgb(9, 9, 43);
         transition: height 0.5s ease-in-out;
+        margin-top: 5px;
     }
 
     .menu-icon {
